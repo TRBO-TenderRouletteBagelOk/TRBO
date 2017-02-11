@@ -7,10 +7,9 @@ app.use(bodyParser.json());
 app.use(('/assets'), express.static('assets'));
 app.use(express.static('public'))
 
-app.get('/', function(req,res) {
-   // Anh, load the home/index file here.
-   res.send('Hello World!')
-})
+app.get('/', function(req,res) { // res = response, req = request
+   res.sendFile(__dirname+'/index.html');
+});
 
 app.listen(3000);
 console.log('Server has begun.')
