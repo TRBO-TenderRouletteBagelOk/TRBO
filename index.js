@@ -5,6 +5,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Static folder for css/js files. ( /assets/css , /assets/js)
 app.use(('/assets'), express.static('assets'));
+app.use(express.static('public'))
 
 app.get('/', function(req,res) {
    // Anh, load the home/index file here.
