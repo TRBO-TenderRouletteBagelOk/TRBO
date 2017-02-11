@@ -8,7 +8,8 @@ app.use(('/assets'), express.static('assets'));
 
 app.get('/', function(req,res) {
    // Anh, load the home/index file here.
-}
+   res.send('Hello World!')
+})
 
 app.listen(3000);
 console.log('Server has begun.')
