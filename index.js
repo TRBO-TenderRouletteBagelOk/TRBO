@@ -6,9 +6,9 @@ app.use(bodyParser.json());
 // Static folder for css/js files. ( /assets/css , /assets/js)
 app.use(('/assets'), express.static('assets'));
 
-app.get('/', function(req,res) {
-   // Anh, load the home/index file here.
-}
+app.get('/', function(req,res) { // res = response, req = request
+   res.sendFile(__dirname+'/index.html');
+});
 
 app.listen(3000);
 console.log('Server has begun.')
