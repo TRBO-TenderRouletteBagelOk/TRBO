@@ -41,11 +41,11 @@ app.get('/swipe', function(req,res) {
 	res.render('swipe');
 });
 
-app.get('/video1', function(req, res){
+app.post('/video1', function(req, res){
 	res.render('video1');
 });
 
-app.get('/video2', function(req, res){
+app.post('/video2', function(req, res){
 	res.render('video2');
 });
 
