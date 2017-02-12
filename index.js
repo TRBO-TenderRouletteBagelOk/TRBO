@@ -20,7 +20,6 @@ app.post('/register', (req, res ) => {
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 // Routing
-app.use(('/bower_components'), express.static('bower_components'));
 app.use(('/assets'), express.static('assets'));
 
 app.get('/', function(req,res) {
