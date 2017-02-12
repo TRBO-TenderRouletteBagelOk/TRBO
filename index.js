@@ -41,6 +41,14 @@ app.get('/swipe', function(req,res) {
 	res.render('swipe');
 });
 
+app.get('/video1', function(req, res){
+	res.render('video1');
+});
+
+app.get('/video2', function(req, res){
+	res.render('video2');
+});
+
 app.get('/matching', function(req,res) {
 	res.render('matching', {layout: "foundation"});
 });
