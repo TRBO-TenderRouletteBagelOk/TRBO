@@ -5,15 +5,12 @@
   "main": "index.js",
   "dependencies": {
     "express": "*",
-    "body-parser": "*",
     "mongoose": "*" ,
-    "express-handlebars": "*"
-    },
-
+    "mongodb": "*" ,
+    "express-handlebars": "*",
     "body-parser": "^1.16.1",
     "express": "^4.14.1"
   },
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
