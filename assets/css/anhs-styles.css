@@ -1,0 +1,54 @@
+/* custom */
+
+#slider {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile {
+  background-color: black;
+  color: white;
+  font-size: 32pt;
+  min-height: 360px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobby-text {
+  text-align: center;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 48px;
+  background-color: #333333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* required by swipejs
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+*/

@@ -30,6 +30,10 @@ app.get('/swipe', function(req,res) {
 	res.render('swipe');
 });
 
+app.get('/matching', function(req,res) {
+	res.render('matching', {layout: "foundation"});
+});
+
  app.listen(8000, function () {
  console.log("App now running on port 8000");
 });
