@@ -40,6 +40,10 @@
   margin: 12px;
 }
 
+form {
+  display: inline;
+}
+
 /* required by swipejs
 */
 

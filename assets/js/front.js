@@ -12,7 +12,7 @@
     callback: function(index, elem, dir) {},
     transitionEnd: function(index, elem) {}
   });
-
+/*
 $('#match-button').click(function () {
 
      $.ajax({
@@ -27,5 +27,5 @@ $('#match-button').click(function () {
              console.log('err '+err);
          }
       });
-
+*/
 });
