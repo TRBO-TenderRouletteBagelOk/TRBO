@@ -15,6 +15,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 12px;
 }
 
 .hobby-text {
@@ -35,7 +36,12 @@
   padding-top: 8px;
 }
 
+.swipe-wrap {
+  margin: 12px;
+}
+
 /* required by swipejs
+*/
 
 .swipe {
   overflow: hidden;
@@ -52,5 +58,3 @@
   position: relative;
   overflow: hidden;
 }
-
-*/
