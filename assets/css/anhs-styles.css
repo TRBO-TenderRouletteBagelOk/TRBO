@@ -30,7 +30,9 @@
   background-color: #333333;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: space-evenly;
+  padding-top: 8px;
 }
 
 /* required by swipejs

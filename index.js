@@ -7,6 +7,8 @@ var mongodb = require('mongodb');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+// start endpoints for receiving
+
 app.post('/register', (req, res ) => {
 	const password = req.body.pword
     , username = req.body.username
@@ -16,6 +18,15 @@ app.post('/register', (req, res ) => {
 
 	res.render('swipe');
 });
+
+app.post('/do-match', function (req, res, next) {
+  console.log("do-match received");
+	console.log(req.body.data);
+  res.write({});
+  res.render('home');
+});
+
+// end endpoints for receiving
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
